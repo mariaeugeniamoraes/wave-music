@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wave Music</title>
+</head>
+<body>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #121212, #1e1e1e);
+            color: white;
+
+            font-family: Arial, Helvetica, sans-serif;
+
+            margin: 0;
+
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 700px;
+
+            padding: 40px;
+
+            text-align: center;
+
+            animation: aparecer 1s ease;
+        }
+
+        nav {
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+            padding: 20px;
+
+
+
+        }
+
+        .logo {
+            color: #1DB954;
+        }
+
+        .menu{
+            
+            display: flex;
+
+            gap: 20px;
+
+            list-style: none;
+
+            padding: 0;
+        }
+
+        .menu li {
+            
+            background: none;
+
+            cursor: pointer;
+
+            transition: 0.3s;
+        }
+
+        .menu li:hover {
+            color: #1DB954;
+
+            transform: scale(1.1);
+        }
+
+        h1 {
+            font-size: 50px;
+
+            color: #1DB954;
+
+            margin-bottom: 10px;
+
+            animation: brilho 2s infinite alternate;
+        }
+
+        .descricao {
+            font-size: 20px;
+
+            margin-bottom: 30px;
+        }
+
+        img {
+            width: 320px;
+
+            border-radius: 20px;
+
+            margin-bottom: 30px;
+
+            transition: 0.4s;
+
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+
+            background-color: #181818;
+
+            padding: 10px;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        button {
+            
+            background: linear-gradient(45deg, #1DB954, #1ed760);
+
+            color: white;
+
+            border: none;
+
+            padding: 15px 30px;
+
+            font-size: 18px;
+
+            border-radius: 10px;
+
+            cursor: pointer;
+
+            margin-bottom: 40px;
+
+            transition: 0.3s;
+
+            box-shadow: 0 0 20px rgba(29, 185, 84, 0.5);
+        }
+
+        button:hover {
+            background-color: #18a449;
+
+            transform: scale(1.1);
+
+        }
+
+        h2 {
+            margin-top: 40px;
+
+            color: #1DB954;
+        }
+
+        ul {
+            list-style: none;
+
+            padding: 0;
+        }
+
+        li {
+            background-color: #222;
+
+            margin: 10px 0;
+
+            padding: 15px;
+
+            border-radius: 10px;
+
+            transition: 0.3s;
+        }
+
+        li:hover {
+            transform: translateX(-5px);
+
+            background-color: #333;
+        }
+
+        p {
+            line-height: 1.6px;
+        }
+
+        footer {
+            margin-top: 50px;
+
+            opacity: 0.7;
+        }
+
+        @keyframes aparecer {
+            from {
+                opacity: 0;
+
+                transform: translateY(30px);
+            }
+        }
+
+        to {
+            opacity: 1;
+
+            transform: translateY(0);
+        }
+
+        @keyframes brilho {
+
+            from {
+                text-shadow: 0 0 10px #1DB954;
+            }
+
+            to {
+                text-shadow: 0 0 25px #1DB954;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+
+        <nav>
+            <h2 class="logo">Wave Music</h2>
+            <ul class="menu">
+                <li>Início</li>
+                <li>Funcionalidades</li>
+                <li>Premium</li>
+                <li>Contato</li>
+
+            </ul>
+        </nav>
+        <h1>Wave Music</h1>
+
+        <p class="descricao">
+            Escute suas músicas favoritas em qualquer lugar.
+        </p>
+
+        <img src="_imagens/music.jpg.png" alt="Aplicativo de Música">
+
+        <br>
+
+        <button>Baixar App</button>
+
+        <h2>Funcionalidades</h2>
+
+        <ul>
+            <li>Milhões de músicas</li>
+            <li>Playlists personalizadas</li>
+            <li>Modo offline</li>
+            <li>Alta qualidade de áudio</li>
+        </ul>
+
+        <h2>Sobre o app</h2>
+
+        <p>
+            O Wave Music permite ouvir músicas,criar playlists e descobrir novos artistas.
+
+        </p>
+
+        <h2>Plano Premium</h2>
+
+        <p>
+            Sem anúncios e músicas offline por apenas R$14,90/mês
+        </p>
+
+    </div>
+</body>
+</html>
